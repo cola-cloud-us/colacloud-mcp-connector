@@ -26,7 +26,7 @@ For manual configuration in current VS Code, create a portable `.mcp.json` at yo
 }
 ```
 
-Follow the client's trust and OAuth sign-in prompts. If using the older `.vscode/mcp.json` format, the top-level key is `servers` instead of `mcpServers`. See the [configuration reference](https://code.visualstudio.com/docs/agents/reference/mcp-configuration) for client-version details.
+Follow the client's trust and OAuth sign-in prompts. If using the VS Code format in `.vscode/mcp.json`, the top-level key is `servers` instead of `mcpServers`. See the [configuration reference](https://code.visualstudio.com/docs/agents/reference/mcp-configuration) for client-version details.
 
 For a developer client using an API key, configure the same URL and the HTTP header `Authorization: Bearer <COLA_API_KEY>`, replacing the placeholder through the client's secret or environment-variable mechanism. Keep API keys out of committed configuration files. OAuth clients should use the interactive connection flow instead of a manually configured API-key header.
 
